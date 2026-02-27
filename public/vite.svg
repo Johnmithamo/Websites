@@ -1,1 +1,25 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#9333ea;stop-opacity:1"/>
+    </linearGradient>
+    <!-- 3D gradient for T -->
+    <linearGradient id="tGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d1d1ff;stop-opacity:1"/>
+    </linearGradient>
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
 
+  <!-- Rounded background -->
+  <rect width="256" height="256" rx="50" ry="50" fill="url(#bgGrad)"/>
+
+  <!-- Curvy 3D T -->
+  <path d="M 70 60 Q 128 20 186 60 Q 178 90 150 90 Q 150 140 106 140 Q 106 90 78 90 Q 70 60 70 60 Z" 
+        fill="url(#tGrad)" filter="url(#shadow)"/>
+</svg>
