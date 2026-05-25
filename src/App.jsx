@@ -123,10 +123,10 @@ const App = () => {
                 View My Work <ChevronRight className="group-hover:translate-x-1 transition-transform" size={18} />
               </a>
               <div className="flex items-center gap-3">
-                <a href="#" className="p-3 bg-slate-900 border border-slate-800 rounded-xl hover:border-slate-600 transition-all text-slate-400 hover:text-white">
+                <a href="https://github.com/Johnmithamo/" className="p-3 bg-slate-900 border border-slate-800 rounded-xl hover:border-slate-600 transition-all text-slate-400 hover:text-white">
                   <Github size={20} />
                 </a>
-                <a href="#" className="p-3 bg-slate-900 border border-slate-800 rounded-xl hover:border-slate-600 transition-all text-slate-400 hover:text-white">
+                <a href="https://www.linkedin.com/in/john-mithamo-60284a405?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="p-3 bg-slate-900 border border-slate-800 rounded-xl hover:border-slate-600 transition-all text-slate-400 hover:text-white">
                   <Linkedin size={20} />
                 </a>
               </div>
@@ -145,9 +145,9 @@ const App = () => {
                 </div>
                 <div className="font-mono text-sm space-y-3">
                   <p className="text-indigo-400">$ <span className="text-slate-200">whoami</span></p>
-                  <p className="text-slate-400">Name: John Doe</p>
+                  <p className="text-slate-400">Name: John Mithamo</p>
                   <p className="text-slate-400">Role: Senior Full Stack Engineer</p>
-                  <p className="text-slate-400">Location: San Francisco, CA</p>
+                  <p className="text-slate-400">Location: Kenya, Kakamega</p>
                   <p className="text-indigo-400">$ <span className="text-slate-200">ls skills/</span></p>
                   <div className="grid grid-cols-2 gap-2 text-indigo-300">
                     <span>- react_nextjs</span>
@@ -269,7 +269,7 @@ const App = () => {
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 font-bold uppercase">Email Me</p>
-                    <p className="font-medium">hello@johndoe.dev</p>
+                    <p className="font-medium">mithamojohn42@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-900/50 border border-slate-800">
@@ -278,7 +278,7 @@ const App = () => {
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 font-bold uppercase">Location</p>
-                    <p className="font-medium">San Francisco, California</p>
+                    <p className="font-medium">Kakamega, Kenya</p>
                   </div>
                 </div>
               </div>
@@ -316,7 +316,7 @@ const App = () => {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 bg-indigo-600 rounded flex items-center justify-center text-[10px] font-bold">JD</div>
-            <span className="text-slate-400 text-sm">© 2024 John Doe. Built with Next.js & Tailwind.</span>
+            <span className="text-slate-400 text-sm">© 2026 John Mithamo. Built with Next.js & Tailwind.</span>
           </div>
           <div className="flex gap-6 text-slate-500 text-sm">
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
