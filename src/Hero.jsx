@@ -10,7 +10,7 @@ function Home() {
       {/* Header */}
       <header>
         <h2 className="logo">
-          <span>J</span>oe.
+          <span>John</span>mithamo.
         </h2>
 
         <nav className="navigation">
@@ -33,7 +33,7 @@ function Home() {
         <div className="content">
 
           <h2>
-            Hi, I'm <span>Joe Greyson</span>
+            Hi, I'm <span>John mithamo</span>
           </h2>
 
           <h4>Frontend Developer</h4>
