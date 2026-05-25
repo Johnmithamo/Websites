@@ -283,30 +283,77 @@ const App = () => {
                 </div>
               </div>
             </div>
+            <form
+  className="bg-slate-900/30 p-8 rounded-3xl border border-slate-800 space-y-6"
+  onSubmit={(e) => {
+    e.preventDefault();
 
-            <form className="bg-slate-900/30 p-8 rounded-3xl border border-slate-800 space-y-6" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-300">Name</label>
-                  <input type="text" className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Jane Doe" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-300">Email</label>
-                  <input type="email" className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="jane@example.com" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-300">Subject</label>
-                <input type="text" className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Project Inquiry" />
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-300">Message</label>
-                <textarea rows="4" className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
-              </div>
-              <button className="w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2">
-                Send Message <Send size={18} />
-              </button>
-            </form>
+    const form = e.target;
+
+    const name = form.name.value;
+    const email = form.email.value;
+    const subject = form.subject.value;
+    const message = form.message.value;
+
+    const whatsappMessage = `Hello John,%0A%0AName: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0A%0AMessage:%0A${message}`;
+
+    window.open(
+      `https://wa.me/254743589922?text=${whatsappMessage}`,
+      "_blank"
+    );
+  }}
+>
+  <div className="grid grid-cols-2 gap-4">
+    <div className="space-y-2">
+      <label className="text-sm font-medium text-slate-300">Name</label>
+      <input
+        name="name"
+        type="text"
+        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors"
+        placeholder="Jane Doe"
+        required
+      />
+    </div>
+
+    <div className="space-y-2">
+      <label className="text-sm font-medium text-slate-300">Email</label>
+      <input
+        name="email"
+        type="email"
+        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors"
+        placeholder="jane@example.com"
+        required
+      />
+    </div>
+  </div>
+
+  <div className="space-y-2">
+    <label className="text-sm font-medium text-slate-300">Subject</label>
+    <input
+      name="subject"
+      type="text"
+      className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors"
+      placeholder="Project Inquiry"
+      required
+    />
+  </div>
+
+  <div className="space-y-2">
+    <label className="text-sm font-medium text-slate-300">Message</label>
+    <textarea
+      name="message"
+      rows="4"
+      className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors resize-none"
+      placeholder="Tell me about your project..."
+      required
+    ></textarea>
+  </div>
+
+  <button className="w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+    Send Message <Send size={18} />
+  </button>
+</form>
+
           </div>
         </div>
       </section>
