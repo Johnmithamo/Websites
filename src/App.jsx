@@ -79,9 +79,9 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="text-2xl font-bold tracking-tighter flex items-center gap-2">
             <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
-              <span className="text-white text-sm">JD</span>
+              <span className="text-white text-sm">JM</span>
             </div>
-            <span className="bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">John Doe</span>
+            <span className="bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">John Mithamo</span>
           </div>
 
           {/* Desktop Menu */}
@@ -150,9 +150,9 @@ const App = () => {
                   <p className="text-slate-400">Location: Kenya, Kakamega</p>
                   <p className="text-indigo-400">$ <span className="text-slate-200">ls skills/</span></p>
                   <div className="grid grid-cols-2 gap-2 text-indigo-300">
-                    <span>- react_nextjs</span>
+                    <span>- react_tailwind</span>
                     <span>- node_express</span>
-                    <span>- kubernetes_docker</span>
+                    <span>- MongoDb</span>
                     <span>- aws_architecture</span>
                   </div>
                   <p className="text-indigo-400">$ <span className="animate-pulse">_</span></p>
@@ -330,7 +330,7 @@ const App = () => {
       {isMenuOpen && (
         <div className="fixed inset-0 z-[60] bg-slate-950 flex flex-col p-8 space-y-8 animate-in fade-in slide-in-from-top-4 duration-300">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold tracking-tighter">JD</div>
+            <div className="text-2xl font-bold tracking-tighter">JM</div>
             <button onClick={() => setIsMenuOpen(false)}><X size={32} /></button>
           </div>
           <div className="flex flex-col space-y-6 text-3xl font-bold">
